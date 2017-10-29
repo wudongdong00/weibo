@@ -1,0 +1,197 @@
+.ui-button {
+    background:url(../img/button.png) !important;
+    border:none !important;
+    color:#fff !important;
+    height:37px !important;
+}
+
+.ui-button:hover {
+    background:url(../img/button_hover.png) !important;
+}
+
+body,h1,h2,h3,h4,h5,h6,ul,ol,p,form,dl,dd{
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background: url("../img/weibo_bg.jpg");
+
+}
+
+ul,ol{
+    list-style: none;
+}
+
+#header {
+    width: 100%;
+    height: 42px;
+    background: url("../img/header_bg.png");
+    position: fixed;
+    top: 0;
+    z-index:9999;
+}
+
+#header .header_main{
+    width: 1000px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+#header .logo{
+    width: 86px;
+    height:42px;
+    background: url("../img/weibo_logo.png") no-repeat center;
+    text-indent: -9999px;
+    float: left;
+}
+
+#header .nav{
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+#header .person{
+    float: right;
+}
+
+#header .search{
+    float: right;
+    padding: 8px 30px 0 0;
+    position: relative;
+}
+
+#header .search input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #999;
+    width: 200px;
+    height: 16px;
+    background: #fff;
+}
+
+#header .search a{
+    width: 17px;
+    height: 18px;
+    display: block;
+    background: url("../img/search_btn.png") no-repeat;
+    position: absolute;
+    top:13px;
+    right: 38px;
+}
+
+#header ul li{
+    float: left;
+    width: 42px;
+    height: 42px;
+
+}
+
+#header .nav ul li{
+    padding: 9px 15px;
+}
+
+#header  ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+#header ul li a:hover{
+    color: #333;
+}
+
+#header ul li a.selected{
+    color: #333;
+}
+
+#header .person li{
+    font-size: 14px;
+    color: #fff;
+}
+
+#header .person li a{
+    font-size: 14px;
+    color: #fff;
+}
+
+#header .person ul li{
+    padding: 10px 6px;
+}
+
+#header .app{
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+#header dl.list{
+    display: none;
+    width: 105px;
+    background: #fff;
+    border: 1px solid #666;
+    position: absolute;
+    border-top: none;
+    top: 42px;
+    left: -47px;
+}
+
+#header dl.list a{
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    color: #444;
+    padding: 2px 2px 0 15px;
+}
+
+#header dl.list a:hover{
+    background: #eee;
+}
+
+#header .user{
+    position: relative;
+}
+
+#header div.refer {
+    display:none;
+    width:140px;
+    height:35px;
+    line-height:35px;
+    background:#fafafa;
+    border:1px solid #666;
+    border-top:none;
+    position:absolute;
+    top:42px;
+    left:-75px;
+    color:#666;
+    font-size:13px;
+    text-indent:10px;
+}
+#header div.refer span {
+    float:right;
+    padding:0 8px 0 0;
+    cursor:pointer;
+    position:relative;
+    top:-2px;
+}
+
+#error {
+    display: none;
+    background:url(../img/error.png) no-repeat 20px center;
+    font-size:14px;
+    font-weight:bold;
+    color:#666;
+    line-height:20px;
+    text-indent:35px;
+}
+
+#loading {
+    display: none;
+    background:url(../img/loading.gif) no-repeat 20px 65%;
+    font-size:14px;
+    font-weight:bold;
+    color:#666;
+    line-height:18px;
+    text-indent:40px;
+}

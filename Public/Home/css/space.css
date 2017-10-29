@@ -1,0 +1,56 @@
+#main{
+    width: 1000px;
+    height: 100%;
+    margin: 50px auto 0 auto;
+    background: #fff;
+    box-shadow: 0 0 5px #ccc;
+}
+
+#main .main_left{
+    width: 730px;
+    float: left;
+    min-height: 800px;
+    background: #fff;
+}
+
+#main .main_left .header{
+    background: #fafafa;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+
+#main .main_left dl dt{
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+#main .main_left dl dt img{
+    display: block;
+}
+
+#main .main_left dl dd{
+    width: 450px;
+    float: left;
+}
+
+#main .main_left dl dd.user{
+    padding: 15px 0 0 20px;
+    font-size: 20px;
+    color: #049;
+    font-weight: bold;
+}
+
+#main .main_left dl dd.info{
+    padding: 15px 0 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+#main .main_right{
+    width:230px;
+    float: right;
+    padding: 0 20px;
+    min-height: 800px;
+    background: #f7f7f7;
+}
+

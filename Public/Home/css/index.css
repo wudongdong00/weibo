@@ -1,0 +1,440 @@
+
+#main {
+    width: 1000px;
+    height: 100%;
+    margin: 50px auto 0 auto;
+    background: #fff;
+    box-shadow: 0 0 5px #ccc;
+}
+
+#main .main_left {
+    width:660px;
+    float: left;
+    padding: 0 20px;
+   height: 100%;
+    background: #fff;
+}
+
+
+#main .weibo_content{
+    clear: both;
+}
+
+#main .weibo_content ul{
+    height: 35px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 5px 0 0;
+}
+
+#main .weibo_content ul li{
+    height: 38px;
+    width: 100px;
+    line-height: 38px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+}
+
+#main .weibo_content ul li a{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    font-size: 14px;
+    color: #666;
+    background: #eee;
+    text-decoration: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px ;
+    padding: 0 10px 0 10px;
+}
+
+#main .weibo_content ul li a.selected{
+    background: none;
+    border: 1px solid#ccc;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    top:-1px;
+    font-weight: bold;
+}
+
+#main .weibo_content ul li i.content_arrow{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url("../img/nav_arrow.png") no-repeat right 3px;
+    padding: 0 0 0 1px;
+
+}
+
+#main .content_data {
+    float: left;
+    width: 660px;
+    padding: 10px;
+}
+
+#main .content_data dt{
+    width: 65px;
+    float: left;
+}
+
+#main .content_data dd{
+    float: right;
+    width: 590px;
+}
+
+#main .content_data dt img{
+    border: none;
+}
+
+#main .content_data dd h4{
+    padding: 0 0 0 4px;
+}
+
+#main .content_data dd h4 a{
+    color: #049;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#main .content_data dd p{
+    color: #555;
+    font-size: 14px;
+    line-height: 150%;
+
+}
+
+#main .content_data dd .img{
+    display: block;
+}
+
+#main .content_data dd .img .thumb{
+    display: block;
+    border:1px solid #eee;
+    cursor:pointer;
+    margin:10px 0 0 0;
+}
+
+#main .content_data dd ul{
+    width:100px;
+    height:100px;
+    border:1px solid #eee;
+    margin:10px 20px 0 0;
+    overflow:hidden;
+    position:relative;
+    float: left;
+}
+
+#main .content_data dd .images img {
+    position:absolute;
+    top:0;
+    left:0;
+    cursor:pointer;
+}
+
+#main .content_data dd .img_zoom{
+    display: none;
+    background:#fafafa;
+    margin:10px 0 0 0;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+#main .content_data dd .img_zoom .unfold{
+    display:block;
+    margin:0 auto 20px auto;
+    cursor:pointer;
+}
+
+#main .content_data dd .img_zoom ol{
+    height:35px;
+    line-height:35px;
+    font-size:13px;
+    padding:0 0 0 20px;
+}
+
+#main .content_data dd .img_zoom ol li{
+    float:left;
+    margin:0 10px 0 0;
+
+}
+
+#main .content_data dd .img_zoom ol li a{
+    text-decoration: none;
+    color: #5e7c85;
+}
+
+#main .content_data dd .img_zoom ol li.in{
+    background: url("../img/img_zoom_in.png") no-repeat left center;
+    padding: 0 0 0 15px;
+}
+
+#main .content_data dd .img_zoom ol li.source{
+    background: url("../img/img_zoom_source.png") no-repeat left center;
+    padding: 0 0 0 18px;
+}
+
+#main .content_data .lots_img {
+    width:100px;
+    height:100px;
+    float:left;
+    border:1px solid #eee;
+    margin:10px 10px 0 0;
+    overflow:hidden;
+    position:relative;
+}
+#main .content_data .lots_img img {
+    position:absolute;
+    top:0;
+    left:0;
+    cursor:pointer;
+}
+
+#main .content_data .box {
+    height:320px;
+    float:left;
+    width:550px;
+    overflow: hidden;
+    position:relative;
+    background:#fafafa;
+    border:1px solid #ccc;
+    border-top: none;
+    left:-20px;
+}
+#main .content_data .box .imgs {
+    display:block;
+    float:left;
+    width:550px;
+    height:320px;
+    background:#fff;
+    color:#ccc;
+    text-align:center;
+    cursor:pointer;
+    padding: 5px 0 0 0;
+}
+#main .content_data .box .imgs:hover {
+    color:#999;
+}
+#main .content_data .box .imgs.active {
+    background-position:-174px 0;
+    color:#555;cursor:default;
+}
+.prev,.next {
+    z-index:99;
+    display:block;
+    width:23px;
+    height:43px;
+    float:left;
+    cursor:pointer;
+    filter:alpha(opacity=70); opacity:0.7
+}
+#main .content_data .prev {
+    background:url("../img/prev_hover.gif") no-repeat;
+    position:relative;
+    top:164px;
+    left: -20px;
+}
+#main .content_data .next {
+    background:url("../img/next_hover.gif") no-repeat;
+    position:relative;
+    left:516px;top:-200px
+}
+#main .content_data .box .scroll_list{
+    width:10000em;
+    position:absolute;
+}
+
+#main .content_data dd .scroll ol{
+    width: 550px;
+    height:30px;
+    line-height:30px;
+    font-size:13px;
+    margin:0 0 0 -20px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+    top: 12px;
+}
+
+#main .content_data dd .scroll ol li{
+    float:left;
+    position: relative;
+    left: -30px;
+}
+
+#main .content_data dd .scroll ol li a{
+    text-decoration: none;
+    color: #5e7c85;
+    padding: 0 30px 0 0;
+}
+
+#main .content_data dd .scroll .in_box{
+    background: url("../img/img_zoom_in.png") no-repeat left center;
+    padding: 0 0 0 15px;
+}
+
+#main .content_data dd .scroll ol li.source_box{
+    background: url("../img/img_zoom_source.png") no-repeat left center;
+    padding: 0 0 0 18px;
+}
+
+#main .content_data dd .footer{
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #5e7c85;
+    border-bottom: 1px solid #eee;
+    clear: both;
+}
+
+#main .content_data dd .footer .time{
+    float: left;
+}
+
+#main .content_data dd .footer .handler{
+    float: right;
+}
+
+#main .content_data dd .footer a {
+    text-decoration:none;
+    color:#5e7c85;
+}
+
+#main .content_data dd .footer .re_com_box  {
+    width:580px;
+    border:1px solid #ccc;
+    background:#fafafa;
+    border-radius:4px;
+    float:right;
+    margin: 0 10px 0 0;
+}
+
+#main .content_data dd .footer .re_com_box p {
+    text-align:right;
+    color:#5e7c85;
+    font-size:12px;
+    padding:10px 23px 0 0;
+}
+
+#main .content_data dd .footer .re_com_box .re_com_text {
+    width:520px;
+    height:80px;
+    background:#fff;
+    border:1px solid #ddd;
+    box-shadow:1px 1px 3px #dcdcdc inset;
+    resize:none;
+    padding:8px;
+    color:#666;
+    margin:5px 25px 0 25px;
+}
+#main .content_data dd .footer .re_box .re_button,#main .content_data dd .footer .com_box .com_button {
+    width:70px;
+    float:right;
+    margin:0 20px 10px 0;
+}
+
+#main .content_data dd .re_content {
+    margin:10px 10px 0 0;
+    border:1px solid #ccc;
+    background:#fafafa;
+    border-radius:4px;
+    padding:10px;
+}
+#main .content_data dd .re_content p {
+    margin:5px 0 0 0;
+}
+#main .content_data dd a {
+    color:#049;
+    text-decoration:none;
+}
+
+#main .content_data .commend_content {
+    border-top:1px solid #eee;
+    width:100%;
+    float:left;
+}
+
+#main .content_data .commend_content p{
+    margin: 0 0 10px 0;
+}
+
+#main .content_data .commend_content ol {
+    padding:5px 15px 0 15px;
+}
+#main .content_data .commend_content ol li {
+    line-height:200%;
+}
+#main .content_data .commend_content ol li.line {
+    border-bottom:1px solid #eee;
+    color:#999;
+}
+
+#main .content_data .commend_content .page {
+    text-align:right;
+    padding:0 15px 0 0;
+}
+#main .content_data .commend_content .page a {
+    margin:0 0 0 5px;
+    padding:2px 8px 2px 8px;
+    border:1px solid #eee;
+}
+#main .content_data .commend_content .page a:hover,.page a.select {
+    color:#fff !important;
+    background:#333;
+}
+
+#main .weibo_content .msg {
+    border:1px solid #FFE4C4;
+    font-size:13px;
+    color:#FF8247;
+    background:#FFF8DC;
+    text-align:center;
+    height:25px;
+    line-height:25px;
+    font-weight:bold;
+    cursor:pointer;
+    display:none;
+}
+
+#load_more{
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+}
+
+#scrollUp {
+    bottom:20px;
+    right:20px;
+    padding:0 20px;
+    height:38px;
+    widht:38px;
+    background:url(../img/top.png) no-repeat;
+}
+
+#main .main_right {
+    width: 300px;
+    float: right;
+    height: 100%;
+    background: #f7f7f7;
+}
+
+#main .main_right .face{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 30px auto 10px auto;
+}
+
+#main .main_right .user{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+
+#main .main_right .user a{
+    text-decoration: none;
+    color: #049;
+    font-weight: bold;
+}
